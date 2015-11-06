@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    	<meta charset="UTF-8"/>
+        <script type="text/javascript">
+        	
+        	var i = 0;
+        	var j = 0;
+        	whileexterno:
+        	while(i < 5){
+        		document.write("<br/> while externo: "+i);
+        		whileinterno:
+        		while(j < 5){
+        			document.write("<br/> while externo: "+j);
+        			if(i == j)
+        				break whileexterno;//quebra a rotina do while externo
+        								   //label funciona como um id
+        			j++;
+        		}
+        		i++;
+        	}
+        		
+        	
+        </script>
+        <title>Label</title>
+    </head>
+    <body>  
+    	
+    	
+    	
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    	<meta charset="UTF-8"/>
+        <script type="text/javascript">
+        	function arrayparalelo(){ 
+        		var arrayPessoas = new Array();
+        		//arrayPessoas[0] =[["Jean", 27], ["Laís", 22], ["Pepeca", 2]];
+        		
+        		arrayPessoas[0] = ["Jean", 27];//Cria um novo array dentro do outro
+        		arrayPessoas[1] = ["Laís", 22];
+        		arrayPessoas[2] = ["Pepeca", 2];
+        		
+        		for(var i=0;i<arrayPessoas.length;i++){
+        			/*para mostrar o nome deve-se dizer a posição do array 
+        			 * principal "i" e para cada informação o indice desejado, 
+        			 * 0 para nome e 1 para idade*/
+        			document.write("<br /> Posição["+i+"]: Nome: "+arrayPessoas[i][0]+" Idade: "+arrayPessoas[i][1]);	
+        		}
+        	}
+        	
+        	
+        	
+        </script>
+        <title>Arrays</title>
+    </head>
+    <body>  
+    	<form>
+    		<input type="button" value="Array paralelo" onclick="arrayparalelo();"/><br />
+    	</form>
+    </body>
+</html>
